@@ -2,10 +2,10 @@ package com.wonu606.managingproducts.model.product;
 
 import java.time.LocalDateTime;
 
-public record UpdatedAt(LocalDateTime value) {
+public record UpdatedAt(LocalDateTime time) {
 
     public UpdatedAt {
-        validate(value);
+        validate(time);
     }
 
     private static void validate(LocalDateTime value) {

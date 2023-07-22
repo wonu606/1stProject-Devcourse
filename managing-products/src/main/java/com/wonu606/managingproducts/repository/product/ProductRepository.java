@@ -4,8 +4,8 @@ import com.wonu606.managingproducts.model.product.Category;
 import com.wonu606.managingproducts.model.product.Product;
 import com.wonu606.managingproducts.model.product.ProductId;
 import com.wonu606.managingproducts.model.product.ProductName;
-import com.wonu606.managingproducts.repository.draft.ProductInsertDraft;
-import com.wonu606.managingproducts.repository.draft.ProductUpdateDraft;
+import com.wonu606.managingproducts.repository.product.draft.ProductInsertDraft;
+import com.wonu606.managingproducts.repository.product.draft.ProductUpdateDraft;
 import java.util.List;
 import java.util.Optional;
 

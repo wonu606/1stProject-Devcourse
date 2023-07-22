@@ -20,7 +20,7 @@ class ProductTest {
         assertThat(product.getCategory()).isEqualTo(category.name());
         assertThat(product.getPrice()).isEqualTo(price.value());
         assertThat(product.getQuantity()).isEqualTo(quantity.value());
-        assertThat(product.getCreatedAt()).isEqualTo(createdAt.value());
-        assertThat(product.getUpdatedAt()).isEqualTo(updatedAt.value());
+        assertThat(product.getCreatedAt()).isEqualTo(createdAt.time());
+        assertThat(product.getUpdatedAt()).isEqualTo(updatedAt.time());
     }
 }

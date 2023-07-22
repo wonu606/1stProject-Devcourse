@@ -2,8 +2,10 @@ package com.wonu606.managingproducts.model.product;
 
 import java.time.LocalDateTime;
 import lombok.EqualsAndHashCode;
+import lombok.ToString;
 
 @EqualsAndHashCode
+@ToString
 public class Product {
 
     private final ProductId id;
@@ -51,10 +53,10 @@ public class Product {
     }
 
     public LocalDateTime getCreatedAt() {
-        return createdAt.value();
+        return createdAt.time();
     }
 
     public LocalDateTime getUpdatedAt() {
-        return updatedAt.value();
+        return updatedAt.time();
     }
 }

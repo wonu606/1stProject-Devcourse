@@ -15,7 +15,7 @@ import org.junit.jupiter.params.provider.Arguments;
 public class ProductFixture {
 
     public static Stream<Arguments> validProductArgumentsProvider() {
-        LocalDateTime now = LocalDateTime.now();
+        LocalDateTime now = TestDateTimeProvider.FIXED_DATE_TIME;
         return Stream.of(
                 Arguments.of(new ProductId(1L), new ProductName("Test Product 1"), Category.COFFEE,
                         new Price(100L), new Quantity(10), new CreatedAt(now), new UpdatedAt(now)),
@@ -27,7 +27,7 @@ public class ProductFixture {
     }
 
     public static Stream<Arguments> validProductsProvider() {
-        LocalDateTime now = LocalDateTime.now();
+        LocalDateTime now = TestDateTimeProvider.FIXED_DATE_TIME;
         return Stream.of(
                 Arguments.of(new Product(
                         new ProductId(1L), new ProductName("Test Product 1"), Category.COFFEE,
