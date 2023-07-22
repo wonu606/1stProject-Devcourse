@@ -14,9 +14,13 @@ public class Product {
     private final CreatedAt createdAt;
     private final UpdatedAt updatedAt;
 
-    public Product(ProductId id, ProductName name, Category category, Price price,
+    public Product(ProductId id,
+            ProductName name,
+            Category category,
+            Price price,
             Quantity quantity,
-            CreatedAt createdAt, UpdatedAt updatedAt) {
+            CreatedAt createdAt,
+            UpdatedAt updatedAt) {
         this.id = id;
         this.name = name;
         this.category = category;
