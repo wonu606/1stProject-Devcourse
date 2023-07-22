@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Update Product</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5">
+  <h1>Update Product</h1>
+  <form action="#" th:action="@{/products/{id}/edit(id=${product.id})}" th:object="${product}" method="post">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" th:field="*{name}" class="form-control" id="name" placeholder="Enter product name">
+    </div>
+    <div class="form-group">
+      <label for="category">Category</label>
+      <input type="text" th:field="*{category}" class="form-control" id="category" placeholder="Enter product category">
+    </div>
+    <div class="form-group">
+      <label for="price">Price</label>
+      <input type="text" th:field="*{price}" class="form-control" id="price" placeholder="Enter product price">
+    </div>
+    <div class="form-group">
+      <label for="quantity">Quantity</label>
+      <input type="text" th:field="*{quantity}" class="form-control" id="quantity" placeholder="Enter product quantity">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+</body>
+</html>
